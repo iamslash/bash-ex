@@ -34,6 +34,33 @@ echo $foo
 # 2>&1
 # redirects stderr of a command to stdout
 foo > /dev/null 2>&1
+
+# |
+# redirects stdout of first command to stdin of other command
+ls -al | grep foo
+
+# $
+foo="hello world"
+echo $foo
+
+# ``
+# command substitution
+echo `date`
+
+# $()
+# The alternative form of command substitution
+echo $(date)
+
+# &&
+# execute several commands
+make && make install
+
+# ;
+# execute several commands on a line
+false; echo "foo"
+
+# ''
+# 
 ```
 # Reference
 
