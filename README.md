@@ -1,15 +1,20 @@
-# Commands
+# Basic
 
-- ls
+- >
 ```bash
-> ls
+$ echo "foo" > ./a.txt 
+$ echo "bar" > /dev/null
 ```
 
-- mv
+- < 
 ```bash
-> mv a b 
+$ cat < a.txt
 ```
 
+- >>
+```bash
+$ echo "foo" >> a.txt
+```
 
 
 # Reference
