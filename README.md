@@ -82,10 +82,15 @@ bash -c "/bin/echo foo 'bar'"
 bash -c "/bin/echo '{ \"user\" : \"$USER\" }'"
 echo "\$foo \" \`"
 
-# ${}
-# variable substitution in double quoting
+# $
+# variable substitution
 msg="bar"
-echo "foo ${bar}"
+echo "foo $msg"
+
+# ${}
+# parameter substitution
+msg="bar"
+echo "foo ${msg}"
 foo=
 foo=${foo-"aaa"}
 echo $foo
