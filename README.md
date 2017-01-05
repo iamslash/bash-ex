@@ -1,3 +1,7 @@
+# Introduction
+These are examples of bash programming.
+You can wrap-up with basic chapter and find useful examples in snippet directory.
+
 # Basic
 
 ```bash
