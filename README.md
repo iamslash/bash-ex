@@ -173,7 +173,19 @@ printf "%s %s \n" $Message1 $Message2
 # sed
 sed -i "s/foo/bar/g" a.txt
 
+# read line from stdin
+while read line
+do
+    echo "$line"
+done
+
+# read line from a.txt
+while read line
+do 
+    echo "$line"
+done < "a.txt"
 ```
+
 # Reference
 
 - [Advanced Bash-Scripting Guide](http://www.tldp.org/LDP/abs/html/index.html)
