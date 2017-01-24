@@ -191,6 +191,10 @@ done < "a.txt"
 # same with let
 (( a = 3 )); (( a++ )); echo "$a"
 let "a = 3"; let "a++"; echo "$a"
+
+# IFS
+# internal field separator
+a="a+b+c"; IFS="+"; echo $a
 ```
 
 # Reference
