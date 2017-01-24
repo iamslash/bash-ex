@@ -184,6 +184,13 @@ while read line
 do 
     echo "$line"
 done < "a.txt"
+
+# (( )) 
+# the double parentheses construct
+# C-style manipulation of variables in Bash
+# same with let
+(( a = 3 )); (( a++ )); echo "$a"
+let "a = 3"; let "a++"; echo "$a"
 ```
 
 # Reference
